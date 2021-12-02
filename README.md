@@ -1,31 +1,31 @@
 ## Wireframe
     
-- Main Page with Login;
+- Main Page with Login Window;
 
 <br>
 <img alt="Main Page" src="assets/images/image01.jpg" />
 <br>
 
-- GET request for '/:id' returns specific Product\Category\Tag;
+- Registration Page;
 
 <br>
-<img alt="Get Specific Product" src="assets/images/image02.jpg" />
+<img alt="Registration Page" src="assets/images/image02.jpg" />
 <br>
 
-- PUT request for '/:id' updates specific Product\Category\Tag;
+- Main Page authed in;
 
 <br>
-<img alt="Updating Product" src="assets/images/image03.jpg" />
+<img alt="Main Page authed in" src="assets/images/image03.jpg" />
 <br>
 
-- CREATE request for '/' creates  Product\Category\Tag;
+- Upper part of game page with banner and team info;
 
 <br>
-<img alt="Creating Product" src="assets/images/image04.jpg" />
+<img alt="Game Page" src="assets/images/image04.jpg" />
 <br>
 
-- DELETE request for '/:id' deletes  specific Product\Category\Tag;
+- Bottom part of game page with comments;
 
 <br>
-<img alt="Deleting Product" src="assets/images/image05.jpg" />
+<img alt="Game Page end" src="assets/images/image05.jpg" />
 <br>
