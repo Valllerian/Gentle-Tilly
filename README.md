@@ -1,3 +1,20 @@
+# Project 02 - Hockey Website;
+
+## Description
+
+## User Stories
+
+* As a user, I want to be able to create an account.
+
+* As a user, I want be able to login.
+
+* As a registered user, I want to see a list of current hockey games.
+
+* As a registered user, I want to be able to select the game and see some info;
+
+* As a registered user, I want to be able to leave comments;
+
+
 ## Wireframe
     
 - Main Page with Login Window;
@@ -29,3 +46,5 @@
 <br>
 <img alt="Game Page end" src="assets/images/image05.jpg" />
 <br>
+
+## License
