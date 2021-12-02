@@ -3,7 +3,7 @@
 ## Description
 
 ## Table of Contents
-- [UserStories](#user stories)
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
