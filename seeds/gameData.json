@@ -1,5 +1,4 @@
-{
-    "games": [
+ [
         {
             "id": "7bdee3df-aec6-4082-9a72-6048abce4845",
             "status": "closed",
@@ -58,5 +57,5 @@
                 "sr_id": "sr:team:3697",
                 "reference": "5"
             }
-        }]
-    }
+        }
+    ]
