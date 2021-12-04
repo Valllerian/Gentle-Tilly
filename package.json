@@ -1,4 +1,5 @@
 {
+
   "name": "crowd-funding",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js"
+  "name": "Project-02",
+  "version": "1.0.0",
+  "description": "- [Installation](#installation)\r - [Usage](#usage)\r - [License](#license)\r - [Wireframe](#wireframe)\r - [Contributing](#contributing)\r - [Tests](#tests)\r - [Questions](#questions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seeds/seeds.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valllerian/Project-02.git"
   },
   "keywords": [],
   "author": "",
@@ -26,4 +38,9 @@
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
   }
+  },
+  "bugs": {
+    "url": "https://github.com/Valllerian/Project-02/issues"
+  },
+  "homepage": "https://github.com/Valllerian/Project-02#readme"
 }
