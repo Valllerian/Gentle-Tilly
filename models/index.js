@@ -1,9 +1,17 @@
 const User = require('./User');
 const Game = require('./Game');
 const Comment = require('./Comment');
-
+const Team = require('./Team');
 // Game/Team relations
+Game.hasMany(Team,{
+    foreignKey: 'game_id',
+    onDelete: 'CASCADE'
+  });
 
+Team.belongsTo(Game, {
+    foreignKey: 'game_id'
+  });
+  
 User.hasMany(Comment, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
