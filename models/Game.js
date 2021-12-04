@@ -11,12 +11,24 @@ Game.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    status: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    home_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    home_alias:{
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    away_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    away_alias:{
+        type: DataTypes.STRING,
+        allowNull: false
     },
     date_played: {
       type: DataTypes.DATE,
