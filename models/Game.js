@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Game extends Model {}
 
@@ -15,20 +15,28 @@ Game.init(
       type: DataTypes.STRING,
     },
     home_name: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    home_alias:{
-        type: DataTypes.STRING,
-        allowNull: false
+    home_alias: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    home_points: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    away_points: {
+        type: DataTypes.INTEGER,
+        allowNull: true
     },
     away_name: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    away_alias:{
-        type: DataTypes.STRING,
-        allowNull: false
+    away_alias: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     date_played: {
       type: DataTypes.DATE,
@@ -41,7 +49,7 @@ Game.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'game',
+    modelName: "game",
   }
 );
 

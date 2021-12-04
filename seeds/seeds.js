@@ -17,8 +17,10 @@ const seedDatabase = async () => {
      status: game.status,
      home_name: game.home.name,
      home_alias: game.home.alias,
+     home_points: game.home_points,
      away_name: game.away.name,
      away_alias: game.away.alias,
+     away_points: game.away_points,
      date_played: game.scheduled
     });
   }
