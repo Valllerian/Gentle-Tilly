@@ -4,24 +4,22 @@ const Comment = require('./Comment');
 
 // Game/Team relations
 
+User.hasMany(Comment, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
 
-// User.hasMany(Comment, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE'
-// });
+Comment.belongsTo(User, {
+  foreignKey: 'user_id'
+});
 
-// Comment.belongsTo(Use, {
-//   foreignKey: 'user_id'
-// });
-
-// Game.hasMany(Comment, {
-//     foreignKey: 'game_id',
-//     onDelete: 'CASCADE'
-// });
+Game.hasMany(Comment, {
+    foreignKey: 'game_id',
+    onDelete: 'CASCADE'
+});
   
-//   Comment.belongsTo(Game, {
-//     foreignKey: 'game_id'
-// });
+  Comment.belongsTo(Game, {
+    foreignKey: 'game_id'
+});
   
-
 module.exports = { User, Game, Comment };
