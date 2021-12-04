@@ -1,0 +1,62 @@
+{
+    "games": [
+        {
+            "id": "7bdee3df-aec6-4082-9a72-6048abce4845",
+            "status": "closed",
+            "coverage": "full",
+            "scheduled": "2021-10-12T23:30:00Z",
+            "home_points": 2,
+            "away_points": 6,
+            "sr_id": "sr:match:28273082",
+            "reference": "20001",
+            "venue": {
+                "id": "05aa49b2-f72d-4d42-ab30-f219d32ed97b",
+                "name": "Amalie Arena",
+                "capacity": 19092,
+                "address": "401 Channelside Drive",
+                "city": "Tampa",
+                "state": "FL",
+                "zip": "33602",
+                "country": "USA",
+                "time_zone": "US/Eastern",
+                "sr_id": "sr:venue:6036"
+            },
+            "broadcasts": [
+                {
+                    "network": "ESPN",
+                    "type": "TV",
+                    "locale": "National",
+                    "channel": "206"
+                },
+                {
+                    "network": "TVAS",
+                    "type": "TV",
+                    "locale": "International"
+                },
+                {
+                    "network": "ESPN+",
+                    "type": "Internet",
+                    "locale": "National"
+                },
+                {
+                    "network": "Sportsnet",
+                    "type": "TV",
+                    "locale": "International"
+                }
+            ],
+            "home": {
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning",
+                "alias": "TB",
+                "sr_id": "sr:team:3694",
+                "reference": "14"
+            },
+            "away": {
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins",
+                "alias": "PIT",
+                "sr_id": "sr:team:3697",
+                "reference": "5"
+            }
+        }]
+    }
