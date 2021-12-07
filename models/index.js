@@ -2,6 +2,7 @@ const User = require('./User');
 const Game = require('./Game');
 const Comment = require('./Comment');
 const Team = require('./Team');
+
 // Game/Team relations
 Game.hasMany(Team,{
     foreignKey: 'game_id',
@@ -30,4 +31,4 @@ Game.hasMany(Comment, {
     foreignKey: 'game_id'
 });
   
-module.exports = { User, Game, Comment };
+module.exports = { User, Game, Comment, Team };
