@@ -2,161 +2,161 @@
   {
     "name": "Anaheim Ducks",
     "alias": "ANA",
-    "image": ""
+    "image": "assets/logos/ANA.png"
   },
   {
     "name": "Arizona Coyotes",
     "alias": "ARI",
-    "image": ""
+    "image": "assets/logos/ARI.png"
   },
   {
     "name": "Boston Bruins",
     "alias": "BOS",
-    "image": ""
+    "image": "assets/logos/BOS.png"
   },
   {
     "name": "Buffalo Sabres",
     "alias": "BUF",
-    "image": ""
+    "image": "assets/logos/BUF.png"
   },
   {
     "name": "Carolina Hurricanes",
     "alias": "CAR",
-    "image": ""
+    "image": "assets/logos/CAR.png"
   },
   {
     "name": "Columbus Blue Jackets",
     "alias": "CBJ",
-    "image": ""
+    "image": "assets/logos/ANA.png"
   },
   {
     "name": "Calgary Flames",
     "alias": "CGY",
-    "image": ""
+    "image": "assets/logos/CGY.png"
   },
   {
     "name": "Chicago Blackhawks",
     "alias": "CHI",
-    "image": ""
+    "image": "assets/logos/CHI.png"
   },
   {
     "name": "Colorado Avalanche",
     "alias": "COL",
-    "image": ""
+    "image": "assets/logos/COL.png"
   },
   {
     "name": "Dallas Stars",
     "alias": "DAL",
-    "image": ""
+    "image": "assets/logos/DAL.png"
   },
   {
     "name": "Detroit Red Wings",
     "alias": "DET",
-    "image": ""
+    "image": "assets/logos/DET.png"
   },
   {
     "name": "Edmonton Oilers",
     "alias": "EDM",
-    "image": ""
+    "image": "assets/logos/EDM.png"
   },
   {
     "name": "Florida Panthers",
     "alias": "FLA",
-    "image": ""
+    "image": "assets/logos/FLA.png"
   },
   {
     "name": "Los Angeles Kings",
     "alias": "LAK",
-    "image": ""
+    "image": "assets/logos/LAK.png"
   },
   {
     "name": "Minnesota Wild",
     "alias": "MIN",
-    "image": ""
+    "image": "assets/logos/MIN.png"
   },
   {
     "name": "Montreal Canadiens",
     "alias": "MTL",
-    "image": ""
+    "image": "assets/logos/MTL.png"
   },
   {
     "name": "Nashville Predators",
     "alias": "NSH",
-    "image": ""
+    "image": "assets/logos/NSH.png"
   },
   {
     "name": "New Jersey Devils",
     "alias": "NJD",
-    "image": ""
+    "image": "assets/logos/NJD.png"
   },
   {
     "name": "New York Islanders",
     "alias": "NYI",
-    "image": ""
+    "image": "assets/logos/NYI.png"
   },
   {
     "name": "New York Rangers",
     "alias": "NYR",
-    "image": ""
+    "image": "assets/logos/NYR.png"
   },
   {
     "name": "Ottawa Senators",
     "alias": "OTT",
-    "image": ""
+    "image": "assets/logos/OTT.png"
   },
   {
     "name": "Philadelphia Flyers",
     "alias": "PHI",
-    "image": ""
+    "image": "assets/logos/PHI.png"
   },
   {
     "name": "Pittsburgh Penguins",
     "alias": "PIT",
-    "image": ""
+    "image": "assets/logos/PIT.png"
   },
   {
     "name": "San Jose Sharks",
     "alias": "SJS",
-    "image": ""
+    "image": "assets/logos/SJS.png"
   },
   {
     "name": "Seattle Kraken",
     "alias": "SEA",
-    "image": ""
+    "image": "assets/logos/SEA.png"
   },
   {
     "name": "St Louis Blues",
     "alias": "STL",
-    "image": ""
+    "image": "assets/logos/STL.png"
   },
   {
     "name": "Tampa Bay Lightning",
     "alias": "TB",
-    "image": ""
+    "image": "assets/logos/TB.png"
   },
   {
     "name": "Toronto Maple Leafs",
     "alias": "TOR",
-    "image": ""
+    "image": "assets/logos/TOR.png"
   },
   {
     "name": "Vancouver Canucks",
     "alias": "VAN",
-    "image": ""
+    "image": "assets/logos/VAN.png"
   },
   {
     "name": "Vegas Golden Knights",
     "alias": "VGK",
-    "image": ""
+    "image": "assets/logos/VGK.png"
   },
   {
     "name": "Washington Capitals",
     "alias": "WSH",
-    "image": ""
+    "image": "assets/logos/WSH.png"
   },
   {
     "name": "Winnipeg Jets",
     "alias": "WPG",
-    "image": ""
+    "image": "assets/logos/WPG.png"
   }
 ]
