@@ -5,11 +5,13 @@ const { User } = require('../../models');
 router.post('/', async (req, res) => {
   try {
     const dbUserData = await User.create({
-      username: req.body.username,
+      name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
+      password: req.body.password
     });
-
+     
+    console.log("I am a post route 1")
+    console.log(dbUserData)
     req.session.save(() => {
       req.session.loggedIn = true;
 
