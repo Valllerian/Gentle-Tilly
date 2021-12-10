@@ -22,26 +22,34 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
+   <link rel="stylesheet" type="text/css" href="/css/custom.css">
 </head>
 
-<body id="page-top">
-  
-
-<nav class="navbar navbar-light bg-light justify-content-between">
+<body>
+  <div id="page-container">
+<div id="content-wrap">
+<nav class="navbar navbar-dark bg-dark">
   <form class="form-inline">
     <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
     {{#if loggedIn}}
     <a class="nav-link" href="/api/games/search">Search </a>
+    <a class="nav-link" href="/api/users/profile">Profile </a>
     {{else}}
     <a class="nav-link" href="/login">Login </a>
     {{/if}}
      {{#if loggedIn}}
-   <button class="btn btn-outline-success my-2 my-sm-0" id="logout" >Logout</button></
+   <button class=" btn btn-outline-success my-2 my-sm-0 " id="logout" >Logout</button>
 
     {{/if}}
   </form >
   
 </nav>
+
+
+<div class="scroll-left">
+
+<a href="https://thehockeynews.com/news/glendale-city-manager-coyotes-still-havent-paid-rent-for-arena" target="_blank"> HOCKEY LATEST NEWS : "GLENDALE CITY MANAGER: COYOTES STILL HAVEN'T PAID RENT FOR ARENA, REMAIN SKEPTICAL OF 'HUMAN ERROR'" </a>
+</div>
 
 {{!-- MAKE IT SMALLER --}}
 <header class="masthead d-flex align-items-center">
@@ -55,17 +63,42 @@
     {{{ body }}}
 </main>
 
-<!-- Footer-->
- <footer class="footer text-center">
-        <div class="container px-4 px-lg-5">
-            <ul class="list-inline mb-5">
+
+<video autoplay muted loop id="myVideo">
+  <source src="assets/love.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<footer class="footer bg-dark text-center text-white" id="footer">
+  <button id="myBtn" onclick="myFunction()">Pause Video</button>
+  <!-- Grid container -->
+ <div class="container px-4 px-lg-5">
+            <ul class="list-inline ">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    <a class="social-link rounded-circle text-white" href="https://github.com/Valllerian/Gentle-Tilly" target="_blank"><i class="icon-social-github"></i></a>
                 </li>
             </ul>
-            <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
+            
         </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white " href="https://github.com/Valllerian/Gentle-Tilly" target="_blank">Gentle Tilly Corp.</a>
+  </div>
+  <!-- Copyright -->
 </footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
 
      <script type='text/javascript' src='js/handlebars-v4.0.5.js'></script>
   
@@ -78,6 +111,8 @@
      {{/if}}
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+    <script src="js/video.js"></script>
+</div>
+</div>
 </body>
 </html>

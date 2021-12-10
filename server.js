@@ -27,9 +27,7 @@ const sess = {
 app.use(session(sess));
 
 const hbs = exphbs.create({})
-hbs.handlebars.registerHelper("status", function(value) {
-  return value === "closed";
- });
+
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
