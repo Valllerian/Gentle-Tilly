@@ -131,6 +131,7 @@ main {
   border-top: solid black 2px;
   padding-top: 150px;
   background-color: rgb(247, 243, 243);
+  background-color: white;
   padding-bottom: 100px;
   margin-bottom: 0px;
 }
@@ -138,9 +139,23 @@ main {
 .page-title {
   text-align: center;
 }
-
 #logBtn {
  display: flex;
  justify-content: space-between;
  align-items: center;
+}
+#mainText {
+  display: block;
+}
+
+#mainText2 {
+  text-align: justify;
+}
+ .container-fluid {
+   width: 80%;
+ }
+
+.search {
+  margin-top: 3%;
+  text-align: center;
 }
