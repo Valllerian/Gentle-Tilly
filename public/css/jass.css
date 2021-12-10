@@ -320,7 +320,19 @@ details {
 summary {
   display: list-item;
 }
-
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: "./assets/logos/NHL-32-teams.jpeg";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Misc
    ========================================================================== */
 /**
