@@ -1,3 +1,4 @@
+
 <section class="container" id="search-bar">
   <h3>Looking for games?</h3>
   <li id="options">
@@ -36,9 +37,29 @@
       <li><a href="WPG">Winnipeg Jets</a></li>
     </ul>
   </li>
+
   <section class="flex-row justify-center">
-    {{#each games as |game|}}
-    <p>{{ game.status }}</p>
-    {{/each}}
+    <form class="search-form">
+      <input
+        type="text"
+        name="search"
+        id="alias"
+        placeholder="Search for your favorite team to see their schedule"
+      />
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+      </div>
+    </form>
   </section>
+  {{! try uooer or inner div with games pei is not sure }}
+  <div id="games">
+    <div id="searchResults">
+      {{#each games as |game|}}
+        <p>{{game.status}}</p>
+      {{/each}}
+    </div>
+  </div>
 </section>
+
+<script src="/js/handlebars-v4.0.5.js"></script>    
+<script src="/js/script.js"></script>
