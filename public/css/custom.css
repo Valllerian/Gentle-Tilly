@@ -121,5 +121,13 @@ nav {
   }
 
 footer {
-  margin-top: 50px;
+  margin-top: 0px;
+}
+
+main {
+  border-top: solid black 2px;
+  padding-top: 150px;
+  background-color: white;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
 }
