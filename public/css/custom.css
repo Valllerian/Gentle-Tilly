@@ -104,3 +104,22 @@ nav {
     border: solid 2px black;
     margin-bottom: 50px;
   }
+
+  .game {
+    display: grid;
+    justify-content: center;
+    border: solid black 3px;
+    text-align: center;
+  }
+
+  .teamDisplay img{
+    display: inline-flex;
+    justify-content: center;
+    
+   margin-left: 75px;
+   margin-right:75px;
+  }
+
+footer {
+  margin-top: 50px;
+}

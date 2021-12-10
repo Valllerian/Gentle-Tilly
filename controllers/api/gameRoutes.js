@@ -108,8 +108,13 @@ router.get("/details/:alias", async (req, res) => {
       where: {
         [Op.or]: [{id:req.params.alias}]
       },
+      include: [
+        {
+          model: Team
+        },
+      ],
     });
-// console.log(gamesData)
+console.log(gamesId)
     // const games = gamesData.get({ plain: true });
     res.render('game', {
       gamesId,
