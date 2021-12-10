@@ -19,6 +19,8 @@ nav {
 }
 
 .scroll-left {
+    
+    box-shadow: 0px 5px 10px 0 rgb(119, 117, 117) inset;
     background-color: rgb(235, 231, 231);
     border-bottom: solid 2px black;
     height: 30px;	
@@ -125,9 +127,35 @@ footer {
 }
 
 main {
+  box-shadow: 0px -5px 75px 0 rgb(78, 77, 77) inset;
   border-top: solid black 2px;
   padding-top: 150px;
+  background-color: rgb(247, 243, 243);
   background-color: white;
   padding-bottom: 100px;
   margin-bottom: 0px;
+}
+
+.page-title {
+  text-align: center;
+}
+#logBtn {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+#mainText {
+  display: block;
+}
+
+#mainText2 {
+  text-align: justify;
+}
+ .container-fluid {
+   width: 80%;
+ }
+
+.search {
+  margin-top: 3%;
+  text-align: center;
 }
