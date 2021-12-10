@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 
  
 
-router.get("/search/:alias", async (req, res) => {
+router.get("/games/:alias", async (req, res) => {
   try {
     const dbSearchData = await Game.findAll({
       where: {

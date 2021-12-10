@@ -1,2 +1,22 @@
-<div id=''></div>
-<P>HELLLO</P>
+<section class="container">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Status</th>
+      <th scope="col">Home Name</th>
+      <th scope="col">Away Name</th>
+      <th scope="col">Game Date</th>
+    </tr>
+  </thead>
+   {{#each gamesData as |game|}}
+  <tbody>
+    <tr>
+      <th scope="row">{{game.dataValues.status }}</th>
+      <td>"{{game.dataValues.home_name }}" | "{{game.dataValues.home_alias }}" </td>
+      <td>"{{game.dataValues.away_name }}" | "{{game.dataValues.away_alias }}"</td>
+      <td>{{game.dataValues.date_played }}</td>
+    </tr>
+  </tbody>
+   {{/each}}
+</table>
+</section>
