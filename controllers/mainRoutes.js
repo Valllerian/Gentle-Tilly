@@ -16,8 +16,30 @@ router.get("/", async (req, res) => {
   }
 });
 
-// test
-
+router.get("/profile", async (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+  console.log("test1")
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id,
+      {
+        attributes: { exclude: ['password'] }
+      });
+      console.log(userData)
+    const user = userData.get({ plain: true });
+    console.log("test3")
+    // Pass serialized data and session flag into template
+    res.render("profile", {
+      ...user,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
  
 
