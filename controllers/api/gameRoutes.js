@@ -30,10 +30,10 @@ router.post("/search", async (req, res) => {
     const dbSearchData = await Game.findAll({
       where: {
         [Op.or]: [{home_alias:req.body.alias},{away_alias:req.body.alias}]
-        // home_alias: req.body.alias, this works
       },
     });
-    res.status(200).json(dbSearchData);
+    res.render("results");
+    // res.status(200).json(dbSearchData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -72,7 +72,24 @@ router.get("/games", async (req, res) => {
 });
 
 // get a specific game
-router.get("/games/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
+  try {
+    const gamesData = await Game.findAll({
+      where: {
+        [Op.or]: [{home_alias:req.params.id},{away_alias:req.params.id}]
+      },
+    });
+// console.log(gamesData)
+    // const games = gamesData.get({ plain: true });
+    res.render('results', {
+      gamesData,
+      loggedIn: req.session.loggedIn,
+      
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
   // this would be called by the client whenever the user click on a specific game
   // and the input would the "id" / "name"
   // this would return a lot more data
