@@ -135,6 +135,12 @@ main {
   margin-bottom: 0px;
 }
 
-/* body {
-  box-shadow: 50px 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 50px 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-} */
+.page-title {
+  text-align: center;
+}
+
+#logBtn {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
