@@ -5,15 +5,14 @@ const commentFormHandler = async (event) => {
     event.preventDefault();
 
     const body = document.querySelector('#comment').value.trim();
-    
+
     console.log(body);
     console.log(dataId);
-    return;
     if (body) {
 
         const response = await fetch('/api/games/details', {
             method: 'POST',
-            body: JSON.stringify({ body, game_id }),
+            body: JSON.stringify({ body, dataId }),
             headers: { 'Content-Type': 'application/json' },
         });
 
