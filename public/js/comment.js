@@ -5,7 +5,7 @@ const commentFormHandler = async (event) => {
     event.preventDefault();
 
     const body = document.querySelector('#comment').value.trim();
-
+    appendToFile('./seeds/commentData.json');
     console.log(body);
     console.log(dataId);
     if (body) {
