@@ -14,18 +14,14 @@
     {{game.dataValues.home_points}}
     {{game.dataValues.away_points}}
     {{game.dataValues.home_alias}}
+    <form id="comment-form" data-id="{{game.dataValues.id}}" class=" add_comment">
+        <textarea id="comment" name="comment"></textarea>
+
+        <button id="comment-button" value="Add Comment">Add Comment
+        </button>
+    </form>
     {{/each}}
 </div>
-<form id="form" action="javascript:void('');" class="add_comment">
 
-    <label>Name
-        <input id="name" type="string" name="name">
-    </label><br>
-    <label>Email
-        <input id="email" type="string" name="email">
-    </label><br>
-    <label>Comment
-        <textarea id="comment" name="comment"></textarea>
-    </label>
-    <input type="submit" value="Add Comment">
-</form>
+
+<script src="/js/comment.js"></script>
