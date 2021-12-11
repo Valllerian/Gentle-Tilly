@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
-const { Game, Team } = require("../../models");
+const { Game, User, Comment } = require("../../models");
 const { Op } = require("sequelize");
 // get method for our games depending on the search parameter
 // INDEX page (with search function / filter)
@@ -29,7 +29,7 @@ router.post("/search", async (req, res) => {
   try {
     const dbSearchData = await Game.findAll({
       where: {
-        [Op.or]: [{home_alias:req.body.alias},{away_alias:req.body.alias}]
+        [Op.or]: [{ home_alias: req.body.alias }, { away_alias: req.body.alias }]
       },
     });
     res.render("results");
@@ -81,15 +81,15 @@ router.get("/:id", async (req, res) => {
   try {
     const gamesData = await Game.findAll({
       where: {
-        [Op.or]: [{home_alias:req.params.id},{away_alias:req.params.id}]
+        [Op.or]: [{ home_alias: req.params.id }, { away_alias: req.params.id }]
       },
     });
-// console.log(gamesData)
+    // console.log(gamesData)
     // const games = gamesData.get({ plain: true });
     res.render('results', {
       gamesData,
       loggedIn: req.session.loggedIn,
-      
+
     });
   } catch (err) {
     console.log(err);
@@ -106,20 +106,23 @@ router.get("/details/:alias", async (req, res) => {
   try {
     const gamesId = await Game.findAll({
       where: {
-        [Op.or]: [{id:req.params.alias}]
+        [Op.or]: [{ id: req.params.alias }]
       },
       include: [
-        {
-          model: Team
-        },
+
+        { model: Comment, include: [{ model: User }] }
+
+        // {
+        //   model: User
+        // },
       ],
     });
-console.log(gamesId)
+    console.log(gamesId)
     // const games = gamesData.get({ plain: true });
     res.render('game', {
       gamesId,
       loggedIn: req.session.loggedIn,
-      
+
     });
   } catch (err) {
     console.log(err);
