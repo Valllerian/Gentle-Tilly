@@ -21,7 +21,9 @@ const seedDatabase = async () => {
      away_name: game.away.name,
      away_alias: game.away.alias,
      away_points: game.away_points,
-     date_played: game.scheduled
+     date_played: game.scheduled,
+     broadcasts: game.broadcasts
+    //  get broadcasts in as an object?
     });
   }
 
