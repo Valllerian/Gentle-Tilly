@@ -1,24 +1,22 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Game, Team } = require('../../models');
+const { Comment } = require('../../models');
 
-router.post('/games', async (req, res) => {
-    // username
-    // comment body
-    console.info(`${req.method} request received`);
-    const newComment = { userName, text } = req.body;
-    if (req.body) {
-        const newComment = {
-            text,
-            id: uniqid(),
-        }
-        readAndAppend(newComment), './seeds/commentData.json';
-        res.json(newComment);
-        console.log(newComment);
-    }
-
+// Comment = new Comment(api, req.params.id)
+router.post('/details/:alias', async (req, res) => {
+    // Use Sequelize's `create()` method to add a row to the table
+    // Similar to `INSERT INTO` in plain SQL
+    Comment.create({
+        id: req.params.id,
+        body: req.body.body,
+        game_id: req.body.game_id,
+        user_id: req.body.user_id
+    })
+        .then((newComment) => {
+            // Send the newly created row as a JSON object
+            res.json(newComment);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
 });
-
-router.get('/games', (req, res) =>
-    readFromFile('./seeds/commentData.json').then((data) => res.json(JSON.parse(data)))
-);

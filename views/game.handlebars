@@ -1,21 +1,31 @@
+<div class="container game">
+    <h1> This is a Specific game page</h1>
 
-
-
-<div class = "container game">
-<h1> This is a Specific game page</h1>
-
-{{#each gamesId as |game|}}
-<div class = "teamDisplay">
-<img src="/assets/logos/{{game.dataValues.home_alias}}.png" alt="Girl in a jacket" >
-<img src="/assets/logos/vs.jpg" alt="Girl in a jacket" >
-<img src="/assets/logos/{{game.dataValues.away_alias}}.png" alt="Girl in a jacket" >
+    {{#each gamesId as |game|}}
+    <div class="teamDisplay">
+        <img src="/assets/logos/{{game.dataValues.home_alias}}.png" alt="Girl in a jacket">
+        <img src="/assets/logos/vs.jpg" alt="Girl in a jacket">
+        <img src="/assets/logos/{{game.dataValues.away_alias}}.png" alt="Girl in a jacket">
+    </div>
+    {{game.dataValues.status}}
+    {{game.dataValues.home_name}}
+    {{game.dataValues.away_name}}
+    {{!-- add if score is avalable --}}
+    {{game.dataValues.home_points}}
+    {{game.dataValues.away_points}}
+    {{game.dataValues.home_alias}}
+    {{/each}}
 </div>
-{{game.dataValues.status}}
-{{game.dataValues.home_name}}
-{{game.dataValues.away_name}}
-{{!-- add if score is avalable --}}
-{{game.dataValues.home_points}}
-{{game.dataValues.away_points}}
-{{game.dataValues.home_alias}}
-{{/each}}
-</div>
+<form id="form" action="javascript:void('');" class="add_comment">
+
+    <label>Name
+        <input id="name" type="string" name="name">
+    </label><br>
+    <label>Email
+        <input id="email" type="string" name="email">
+    </label><br>
+    <label>Comment
+        <textarea id="comment" name="comment"></textarea>
+    </label>
+    <input type="submit" value="Add Comment">
+</form>
