@@ -1,12 +1,13 @@
 const commentForm = document.querySelector('#comment-form');
+const dataId = commentForm.getAttribute('data-id');
 
 const commentFormHandler = async (event) => {
     event.preventDefault();
 
     const body = document.querySelector('#comment').value.trim();
-    const game_id = commentForm.data_id;
+    
     console.log(body);
-    console.log(game_id);
+    console.log(dataId);
     return;
     if (body) {
 
