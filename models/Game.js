@@ -43,6 +43,10 @@ Game.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    broadcasts: {
+      type: DataTypes.JSON,
+      allowNull: true
+    }
   },
   {
     sequelize,

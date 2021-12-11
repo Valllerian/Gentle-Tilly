@@ -114,8 +114,8 @@ router.get("/details/:alias", async (req, res) => {
         },
       ],
     });
-console.log(gamesId)
     // const games = gamesData.get({ plain: true });
+    
     res.render('game', {
       gamesId,
       loggedIn: req.session.loggedIn,

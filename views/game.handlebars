@@ -14,6 +14,13 @@
     {{game.dataValues.home_points}}
     {{game.dataValues.away_points}}
     {{game.dataValues.home_alias}}
+    {{!-- Create a handlebars helper function --}}
+    {{!-- https://stackoverflow.com/questions/10232574/need-handlebars-js-to-render-object-data-instead-of-object-object --}}
+    <P>"{{game.dataValues.broadcasts.network}}" Network</P>
+    <P>"{{game.dataValues.broadcasts.type}}" type</P>
+    <P>"{{game.dataValues.broadcasts.locale}}" locale</P>
+    <P>"{{game.dataValues.broadcasts.channel}}" channel</P>
+   
     {{/each}}
 </div>
 <form id="form" action="javascript:void('');" class="add_comment">
