@@ -21,11 +21,13 @@
     
     {{!-- Create a handlebars helper function --}}
     {{!-- https://stackoverflow.com/questions/10232574/need-handlebars-js-to-render-object-data-instead-of-object-object --}}
+    <p>Watch it on:</p>
     {{#each game.dataValues.broadcasts as |broadcast|}}
+
     <P>"{{broadcast.network}}" Network</P>
-    <P>"{{broadcast.type}}" Network</P>
-    <P>"{{broadcast.locale}}" Network</P>
-    <P>"{{broadcast.channel}}" Network</P>
+    <P>Type of network: "{{broadcast.type}}" </P>
+    
+<p>-------------------------</p>
     {{/each}}
   
    

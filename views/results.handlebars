@@ -1,4 +1,4 @@
-<section class="container">
+<div class="container">
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -13,14 +13,18 @@
   <tbody id = "gameId">
     <tr>
       <th scope="row">{{game.dataValues.status }}</th>
-      <td>"{{game.dataValues.home_name }}" | "{{game.dataValues.home_alias }}" </td>
-      <td>"{{game.dataValues.away_name }}" | "{{game.dataValues.away_alias }}"</td>
+      <td>{{game.dataValues.home_name }} | {{game.dataValues.home_alias }} </td>
+      <td>{{game.dataValues.away_name }} | {{game.dataValues.away_alias }}</td>
       <td>{{game.dataValues.date_played }}</td>
       <td><a class="nav-link" href="/api/games/details/{{game.dataValues.id }}"> > </a></td>
     </tr>
   </tbody>
    {{/each}}
-</table>
-</section>
 
+
+
+</table>
+</div>
+
+<script src='./js/elevator.js'></script>
 <script src="./js/game.js"></script>
