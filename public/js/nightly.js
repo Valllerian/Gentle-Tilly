@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     nightMode: {
       body: "#282828",
       texts: "#f5f5f5",
+      tbody: {color: 'white'},
       inputs: { color: '#f5f5f5', backgroundColor: "#313131" },
       buttons: { color: "#f5f5f5", backgroundColor: "#757575" },
       textareas: { color: '#f5f5f5', backgroundColor: "#313131" },
