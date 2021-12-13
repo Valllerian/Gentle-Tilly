@@ -46,7 +46,7 @@ Game.init(
     broadcasts: {
       type: DataTypes.JSON,
       allowNull: true
-    }
+    },
   },
   {
     sequelize,

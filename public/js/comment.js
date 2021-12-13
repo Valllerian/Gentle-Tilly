@@ -16,9 +16,8 @@ if(body){
         body: JSON.stringify({ body }),
         headers: { 'Content-Type': 'application/json' },
 });
-console.log(  "Has been saved")
+
 if (response.ok) {
-    console.log(  "Has been saved")
     window.location.reload();
 }else {
     alert('Try again !');

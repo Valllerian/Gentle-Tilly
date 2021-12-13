@@ -34,16 +34,20 @@
       <P>Type of network: "{{broadcast.type}}" </P>
 
       <p>-------------------------</p>
+
     {{/each}}
 
-    <p>This is comments:</p>
+
+  
+       <p>Comment section:</p>
 {{#each game.dataValues.comments as |comment| }}
-{{#each comment as |test|}}
-<p> Hello: {{test.body}}</p>
-{{/each}}
+<p>{{comment.dataValues.body}}</p>
+
 {{/each}}
 
   {{/each}}
+
+   
 </div>
 {{! <div class="powr-comments" id="fd7d5970_1639279737"></div>
 <script src="https://www.powr.io/powr.js?platform=html"></script> }}

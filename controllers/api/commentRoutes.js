@@ -15,11 +15,13 @@ router.post('/details/:alias', async (req, res) => {
             body: req.body.body,
             game_id:  req.session.game_id,
             user_id: req.session.user_id,
+            username: req.session.username
         
     }
     )
         .then((newComment) => {
             // Send the newly created row as a JSON object
+            console.log(newComment);
             readAndAppend(newComment, '../../seeds/commentData.json');
 
             res.json(newComment);
