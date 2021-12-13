@@ -70,7 +70,7 @@ router.get("/details/:alias", async (req, res) => {
       },
       include: [
 
-        { model: Comment, attributes: ["body", "game_id", "user_id", "username"]},
+        { model: Comment, attributes: ["body", "game_id", "user_id"]},
         
       ],
       // , include: [{ model: User, attributes: ["name"] }]
