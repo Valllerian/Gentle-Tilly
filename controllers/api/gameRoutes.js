@@ -70,14 +70,15 @@ router.get("/details/:alias", async (req, res) => {
       },
       include: [
 
-        { model: Comment, include: [{ model: User }] }
-
+        { model: Comment, attributes: ["body", "game_id", "user_id"] },
+        
       ],
+      // , include: [{ model: User, attributes: ["name"] }]
     });
     req.session.save(() => {
       req.session.game_id = req.params.alias;
     });
-    console.log(req.session.game_id)
+    console.log(gamesId)
     // const games = gamesData.get({ plain: true });
     res.render('game', {
       gamesId,

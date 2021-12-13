@@ -36,10 +36,18 @@
       <p>-------------------------</p>
     {{/each}}
 
+    <p>This is comments:</p>
+{{#each game.dataValues.comments as |comment| }}
+{{#each comment as |test|}}
+<p> Hello: {{test.body}}</p>
+{{/each}}
+{{/each}}
+
   {{/each}}
 </div>
 {{! <div class="powr-comments" id="fd7d5970_1639279737"></div>
 <script src="https://www.powr.io/powr.js?platform=html"></script> }}
+
 
 <div class="row mx-auto mt-3" id = "comment-form">
   <div class="col-md-5 ml-5 mr-5 card mx-auto">
