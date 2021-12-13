@@ -10,11 +10,9 @@ router.post('/', async (req, res) => {
       password: req.body.password
     });
      
-    console.log("I am a post route 1")
     console.log(dbUserData)
     req.session.save(() => {
       req.session.loggedIn = true;
-
       res.status(200).json(dbUserData);
     });
   } catch (err) {
