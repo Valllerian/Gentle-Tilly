@@ -11,13 +11,13 @@
       </tr>
     </thead>
     {{#each gamesData as |game|}}
-    <tbody id="gameId">
+    <tbody class="gameId">
       <tr>
-        <th scope="row">{{game.dataValues.status }}</th>
+        <th scope="row" class="gameId">{{game.dataValues.status }}</th>
         <td>"{{game.dataValues.home_name }}" | "{{game.dataValues.home_alias }}" </td>
         <td>"{{game.dataValues.away_name }}" | "{{game.dataValues.away_alias }}"</td>
         <td>{{game.dataValues.date_played }}</td>
-        <td><a class="nav-link" href="/api/games/details/{{game.dataValues.id }}"> > </a></td>
+        <td><a  href="/api/games/details/{{game.dataValues.id }}"> > </a></td>
       </tr>
     </tbody>
     {{/each}}

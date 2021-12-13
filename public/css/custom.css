@@ -119,6 +119,14 @@ h1 {
     text-align: center;
   }
 
+  .gameID{
+    color: black;
+  }
+
+  .gamedark{
+    color: white;
+  }
+
   .teamDisplay img{
     display: inline-flex;
     justify-content: center;
