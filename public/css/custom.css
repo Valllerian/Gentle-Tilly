@@ -184,6 +184,13 @@ main p {
   text-align: center;
 }
 
+.main {
+  background-color: white;
+}
+
+.mainD {
+  background-color: rgb(52, 54, 54);
+}
 
 /* DarkMode slider */
 
@@ -247,4 +254,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* DarkMode slider END */
+#position {
+  margin-top: 50px;
+}

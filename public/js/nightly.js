@@ -133,7 +133,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         this.applyClasses();
       }
 
-      console.log(this.initialTheme, this.nightMode)
+  
 
       if (cb)
         cb();
