@@ -15,6 +15,8 @@ router.post('/details/:alias', async (req, res) => {
     )
         .then((newComment) => {
             // Send the newly created row as a JSON object
+            readAndAppend(newComment, './seeds/commentData.json');
+
             res.json(newComment);
 
         })
