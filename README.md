@@ -1,4 +1,4 @@
-# Project 02 - Hockey Website;
+# Gentle Tilly!
 
 ## Description
 
