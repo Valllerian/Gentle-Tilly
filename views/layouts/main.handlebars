@@ -14,8 +14,9 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark bg-dark sticky">
-      <form class="form-inline">
+    <nav class="navbar navbar-dark sticky">
+      <form class="form-inline ">
+       
           <a class="nav-link" href="/homepage">Home
               <span class="sr-only">(current)</span>
           </a>
@@ -32,7 +33,9 @@
           <input type="checkbox">
           <span class="slider round" id="toggle-nightify-btn"></span>
           </label>
-          </div>
+          
+        </div>
+         
             {{#if loggedIn}}
               <button class="btn btn-outline-success my-2 my-sm-0" id="logout">Logout</button>
             {{/if}}
@@ -100,7 +103,7 @@
         });
 </script>
 
-<footer class="footer bg-dark text-center text-white stickyBottom" id="footer">
+<footer class="footer text-center text-white stickyBottom" id="footer">
  
   <button id="myBtn" onclick="myFunction()">Pause Video</button>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
