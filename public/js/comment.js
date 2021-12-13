@@ -11,10 +11,11 @@ const commentFormHandler = async (event) => {
     const body = document.querySelector('#comment').value.trim();
 
 
-    // saved as an object that has the body, user id and game id
+    appendToFile('./seeds/commentData.json');
 
     console.log(body);
     console.log(dataId);
+
     if (body) {
         const response = await fetch('/api/games/details/', {
             method: 'POST',
