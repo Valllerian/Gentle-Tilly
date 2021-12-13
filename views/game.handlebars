@@ -18,7 +18,7 @@
     {{!-- IT WORKS --}}
     {{#if (isClosed game.dataValues.status)}}true{{else}}false{{/if}}
 
-    
+
     {{!-- Create a handlebars helper function --}}
 
     {{!-- https://stackoverflow.com/questions/10232574/need-handlebars-js-to-render-object-data-instead-of-object-object --}}
@@ -33,14 +33,9 @@
   
    
 
-    <form id="comment-form" data-id="{{game.dataValues.id}}" class=" add_comment">
-        <textarea id="comment" name="comment"></textarea>
-
-        <button id="comment-button" value="Add Comment">Add Comment
-        </button>
-    </form>
     {{/each}}
 </div>
-
+<div class="powr-comments" id="fd7d5970_1639279737"></div>
+<script src="https://www.powr.io/powr.js?platform=html"></script>
 
 <script src="/js/comment.js"></script>
