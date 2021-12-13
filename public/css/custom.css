@@ -285,15 +285,22 @@ input:checked + .slider:before {
 .comment {
   border: black 3px solid;
  margin-top: 25px;
+ background-image: linear-gradient(rgb(52, 54, 54),white)
 }
 
 #commentInfo {
   border-top: black 3px solid;
   border-bottom: black 3px solid;
+  color: black;
 }
 
 #commentText {
   font-style: italic;
   font-size: 20px;
   padding-left: 5px;
+  color: black;
+}
+
+#comment-form {
+  margin-top: 25px;
 }
