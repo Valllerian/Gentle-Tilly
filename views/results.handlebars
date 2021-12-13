@@ -1,30 +1,32 @@
-<div class="container">
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Status</th>
-      <th scope="col">Home Name</th>
-      <th scope="col">Away Name</th>
-      <th scope="col">Game Date</th>
-      <th scope="col">Game Detail</th>
-    </tr>
-  </thead>
-   {{#each gamesData as |game|}}
-  <tbody id = "gameId">
-    <tr>
-      <th scope="row">{{game.dataValues.status }}</th>
-      <td>{{game.dataValues.home_name }} | {{game.dataValues.home_alias }} </td>
-      <td>{{game.dataValues.away_name }} | {{game.dataValues.away_alias }}</td>
-      <td>{{game.dataValues.date_played }}</td>
-      <td><a class="nav-link" href="/api/games/details/{{game.dataValues.id }}"> > </a></td>
-    </tr>
-  </tbody>
-   {{/each}}
+
+<section class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Status</th>
+        <th scope="col">Home Name</th>
+        <th scope="col">Away Name</th>
+        <th scope="col">Game Date</th>
+        <th scope="col">Game Detail</th>
+      </tr>
+    </thead>
+    {{#each gamesData as |game|}}
+    <tbody id="gameId">
+      <tr>
+        <th scope="row">{{game.dataValues.status }}</th>
+        <td>"{{game.dataValues.home_name }}" | "{{game.dataValues.home_alias }}" </td>
+        <td>"{{game.dataValues.away_name }}" | "{{game.dataValues.away_alias }}"</td>
+        <td>{{game.dataValues.date_played }}</td>
+        <td><a class="nav-link" href="/api/games/details/{{game.dataValues.id }}"> > </a></td>
+      </tr>
+    </tbody>
+    {{/each}}
 
 
+  </table>
+  {{!-- {{#each Comments as |comment|}} --}}
+</section>
 
-</table>
-</div>
 
 <script src='./js/elevator.js'></script>
 <script src="./js/game.js"></script>

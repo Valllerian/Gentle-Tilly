@@ -67,7 +67,7 @@
   {
     "name": "Los Angeles Kings",
     "alias": "LA",
-    "image": "assets/logos/LAK.png"
+    "image": "assets/logos/LA.png"
   },
   {
     "name": "Minnesota Wild",
@@ -87,7 +87,7 @@
   {
     "name": "New Jersey Devils",
     "alias": "NJ",
-    "image": "assets/logos/NJD.png"
+    "image": "assets/logos/NJ.png"
   },
   {
     "name": "New York Islanders",
@@ -117,7 +117,7 @@
   {
     "name": "San Jose Sharks",
     "alias": "SJ",
-    "image": "assets/logos/SJS.png"
+    "image": "assets/logos/SJ.png"
   },
   {
     "name": "Seattle Kraken",

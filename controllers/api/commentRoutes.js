@@ -4,6 +4,7 @@ const { Comment } = require('../../models');
 
 
 
+
 // Comment = new Comment(api, req.params.id)
 router.post('/details/:alias', async (req, res) => {
     // Use Sequelize's `create()` method to add a row to the table
@@ -19,4 +20,6 @@ router.post('/details/:alias', async (req, res) => {
         .catch((err) => {
             res.json(err);
         });
+    // render results
+    res.render("results");
 });

@@ -6,6 +6,11 @@ const commentFormHandler = async (event) => {
 
     const body = document.querySelector('#comment').value.trim();
 
+
+    appendToFile('./seeds/commentData.json');
+    console.log(body);
+    console.log(dataId);
+
     if (body) {
 
         const response = await fetch('/api/games/details', {
