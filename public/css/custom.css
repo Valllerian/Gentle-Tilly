@@ -18,6 +18,10 @@ nav {
     
 }
 
+h1 {
+  font-size: 130px;
+}
+
 .scroll-left {
     
     box-shadow: 0px 5px 10px 0 rgb(119, 117, 117) inset;
@@ -160,29 +164,6 @@ main {
   text-align: center;
 }
 
-
-/* Elevator Button */
-
-.elevator {
-  text-align: center;
-  cursor: pointer;
-  width: 140px;
-  margin: auto;
-}
-
-.elevator:hover {
-  opacity: 0.7;
-}
-
-.elevator svg {
-  width: 40px;
-  height: 40px;
-  display: block;
-  margin: auto;
-  margin-bottom: 5px;
-}
-
-/* Elevator Button END*/
 
 /* DarkMode slider */
 
