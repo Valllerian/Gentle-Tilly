@@ -28,39 +28,75 @@
 
 ## Installation 
 
+- Clone the repo to the working directory | `gh repo clone Valllerian/gentle-tilly`;
+- Enter working directory;
+- Make sure to install dependencies `npm install`
+- Source the database using seeds function in `/seeds` folder;
+- Run the local server to see the content;
+
 ## Usage
+
+Find deployed app on heroku:
 
 ## Wireframe
     
-- Main Page with Login Window;
+- Main page layout with being unauthorized;
 
 <br>
-<img alt="Main Page" src="assets/images/image01.jpg" />
+<img alt="Main Page" src="assets/readme1.gif" />
 <br>
 
-- Registration Page;
+- Main page after logging in; Search prompt appears;
 
 <br>
-<img alt="Registration Page" src="assets/images/image02.jpg" />
+<img alt="Main Page" src="assets/readme2.gif" />
 <br>
 
-- Main Page authed in;
+
+- Search page with an alias dropdown ;
 
 <br>
-<img alt="Main Page authed in" src="assets/images/image03.jpg" />
+<img alt="Main Page" src="assets/readme3.gif" />
 <br>
 
-- Upper part of game page with banner and team info;
+
+- Single game page (closed game shows score);
 
 <br>
-<img alt="Game Page" src="assets/images/image04.jpg" />
+<img alt="Main Page" src="assets/readme4.gif" />
 <br>
 
-- Bottom part of game page with comments;
+
+- Single game page (scheduled game shows networks to view the game on);
 
 <br>
-<img alt="Game Page end" src="assets/images/image05.jpg" />
+<img alt="Main Page" src="assets/readme5.gif" />
 <br>
+
+- Adding comment generates a comment section with comment body and an avatar;
+
+<br>
+<img alt="Main Page" src="assets/readme6.gif" />
+<br>
+
+- Main Page styled with a background video (toggle button available);
+
+<br>
+<img alt="Main Page" src="assets/readme7.gif" />
+<br>
+
+- Dark mode switch is available;
+
+<br>
+<img alt="Main Page" src="assets/readme8.gif" />
+<br>
+
+- Future development includes profile page content + comment history;
+
+<br>
+<img alt="Main Page" src="assets/readme9.gif" />
+<br>
+
 
 ## License
 
@@ -76,7 +112,7 @@ Find more information at https://opensource.org/licenses/MIT.
     
 ## Contributing
     
-- Fork the repo at | `gh repo clone Valllerian/Project-02`;
+- Fork the repo at | `gh repo clone Valllerian/gentle-tilly`;
 - Create a working branch | `git checkout -b yourname-branch`;
 - Commit any changes | `git commit -m 'Your changes here'`  *please, make sure to comment your commits*;
 - Push your changes to the branch | `git push  yourname-branch`
@@ -89,3 +125,6 @@ N\A
     
 ## Questions
     
+- Feel free to add any issues and contact me at valeriibihun.co@gmail.com if you have any questions;
+
+- Follow my code: https://github.com/valllerian;
