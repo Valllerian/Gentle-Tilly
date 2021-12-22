@@ -2,6 +2,9 @@
 
 ## Description
 
+Hockey is a large industry with 32 teams in the NHL and each team playing 82 games a season. Gentle Tilly is a place where a user can go to find schedules and chat about games. Along with showing users where they can go to stream upcoming games. There is also a section where users can learn more about hockey lingo such as the word tilly.
+
+
 ## Table of Contents
 
 - [Installation](#installation)
