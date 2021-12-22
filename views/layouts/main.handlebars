@@ -55,17 +55,18 @@
     </div>
 </header>
 
+{{!-- Main body --}}
 <main class = "main">
   {{{body}}}
 </main>
 
-
+{{!-- Video banner --}}
 <video muted loop id="myVideo">
     <source src="/assets/love.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
 </video>
 
-
+{{!-- Nightly.js script import --}}
 <script src="/js/nightly.js" charset="utf-8"></script>
 <script type="text/javascript">
   var Nightly = new Nightly(
@@ -103,8 +104,9 @@
         });
 </script>
 
+{{!-- Footer --}}
+
 <footer class="footer text-center text-white stickyBottom" id="footer">
- 
   <button id="myBtn" onclick="myFunction()">Pause Video</button>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 Copyright:
@@ -114,6 +116,7 @@
     </div>
 </footer>
 
+{{!-- Adding logout button if user is logged in --}}
 {{#if loggedIn}}
   <script src="/js/logout.js"></script>
 {{/if}}
