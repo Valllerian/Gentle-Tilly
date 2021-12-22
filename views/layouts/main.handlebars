@@ -35,12 +35,15 @@
           </label>
           
         </div>
-         
+        
+          {{!-- Adding logout button if user is logged in --}}
+
             {{#if loggedIn}}
               <button class="btn btn-outline-success my-2 my-sm-0" id="logout">Logout</button>
             {{/if}}
       </form>
     </nav>
+        {{!-- Running news line  --}}
         <div class="scroll-left">
           <a href="https://thehockeynews.com/news/glendale-city-manager-coyotes-still-havent-paid-rent-for-arena" target="_blank">
             HOCKEY LATEST NEWS : "GLENDALE CITY MANAGER: COYOTES STILL HAVEN'T
@@ -116,7 +119,7 @@
     </div>
 </footer>
 
-{{!-- Adding logout button if user is logged in --}}
+{{!-- Adding logout script if user is logged in --}}
 {{#if loggedIn}}
   <script src="/js/logout.js"></script>
 {{/if}}
