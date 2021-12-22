@@ -1,18 +1,9 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-<<<<<<< HEAD
-let sequelize;
-
-if (process.env.JAWSDB_URL) { 
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
-} else { //else run it locally
-=======
-
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
->>>>>>> main
   sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
@@ -25,10 +16,5 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
-<<<<<<< HEAD
-// working on heroku
-module.exports = sequelize;
-=======
 //....
 module.exports = sequelize;
->>>>>>> main

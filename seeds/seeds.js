@@ -11,7 +11,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-
+  // Creating games and pulling info from the NHL database;
   for (const game of gameData) {
     await Game.create({
      status: game.status,
