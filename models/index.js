@@ -3,7 +3,7 @@ const Game = require('./Game');
 const Comment = require('./Comment');
 const Team = require('./Team');
 
-// Game/Team relations
+// Establishing relations
 Game.hasMany(Team,{
     foreignKey: 'game_id',
     onDelete: 'CASCADE'

@@ -1,6 +1,7 @@
 <div class="container game">
- 
+ {{!-- Importing game data and displaying content: --}}
   {{#each gamesId as |game|}}
+  {{!-- images are displayed based on aliases --}}
     <div class="teamDisplay">
       <img
         src="/assets/logos/{{game.dataValues.home_alias}}.png"
@@ -14,7 +15,7 @@
     </div>
     <p> {{game.dataValues.home_name}} VS 
     {{game.dataValues.away_name}}</p>
-   
+   {{!-- Custom function helps us define if the game is closed or scheduled --}}
     {{#if (isClosed game.dataValues.status)}}
     <h2 id= "score">Score:</h2>
 <p>{{game.dataValues.home_alias}} <span id = "homePoins" class = "">{{game.dataValues.home_points}}</span> : {{game.dataValues.away_alias}} <span id = "awayPoints" class = "">{{game.dataValues.away_points}}</span></p>
@@ -30,6 +31,9 @@
     {{/if}}
 <div id = "commentBox">
 <p>Comment section:</p>
+
+{{!-- Displaying comments --}}
+
 {{#each game.dataValues.comments as |comment| }}
 <div class="comment">
     <img src="/assets/" alt="" width="150" height="150" class = "avatar">
@@ -38,6 +42,8 @@
 </div>
 {{/each}}
 {{/each}}
+
+{{!-- New comment form --}}
 
 <div class = "commentArea"> 
 <div id = "comment-form">
